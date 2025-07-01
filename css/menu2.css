@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+   
+}
+body
+{
+    background-color: #778093;
+}
+
+.menucard
+{
+    background-color: rgb(41, 40, 40);
+    width: 100%;
+    color:aliceblue;
+    height:100px;
+    text-align: center;
+    margin-top:none;
+}
+.menucard h1
+{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 100px;
+    padding-top:25px;
+
+}
+
+
+.recom-body {
+    height: auto;
+
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+    /* background-image: url('/images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.recom-body .recom-1 {
+    background-color: whitesmoke;
+    box-shadow: 1px 2px gray;
+    border: #70798c;
+    border: 1px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    height: 217px;
+    width: 250px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    margin-left: 2%;
+
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+.recom-img {
+    width: 100%;
+    height: 60%;
+}
+
+.price {
+    margin-top: 5%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.recom-1 label {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: x-large;
+
+
+}
+
+.name label {
+    color: brown;
+    font-weight: bold;
+}
+button
+{
+    height: 30px;
+    width: 100px;
+    font-family: 'lato' sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    
+    background-color: mintcream;
+    border: rgb(123, 123, 138) solid 2px;
+   
+    width: 67%;
+    margin-top: 19px;
+    background-color: #152914;
+    color: white;
+    margin: auto;
+
+
+}
+

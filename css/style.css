@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+:root {
+    --dark: #2a2727;
+    --grey: #70798c;
+    --cream: #f5f1ed;
+    --light: #dad2bc;
+    --ice: #a99985;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+
+}
+
+
+
+
+header {
+    background-color: var(--dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    /* justify-content:space-evenly;  */
+    z-index: 1000;
+
+    box-shadow: #70798c;
+    display: flex;
+}
+
+#icon {
+    margin-left: 20px;
+    visibility: hidden;
+    color: #fff;
+
+
+}
+.logoimg
+{
+    width: 100px;
+    animation:logoim 3s ease-in-out infinite alternate-reverse;
+}
+@keyframes logoim {
+    from
+    {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+    
+}
+
+header .logo {
+
+    height: fit-content;
+    position: relative;
+    
+
+}
+
+img {
+    height: 50px;
+}
+
+header .navbar {
+    margin-left: 20%;
+    align-self: center;
+    width: auto;
+    height: 50px;
+    display: inline;
+
+    margin-top: 1%;
+}
+
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: 5rem 1.5rem;
+    color: #f5f1ed;
+    height: 1%;
+    padding-bottom: 10px;
+
+
+}
+
+header .navbar a:hover {
+    background-color: #70798c;
+    font-size: 1.9rem;
+    text-decoration: underline;
+}
+
+.slide {
+    width: auto;
+    height: 500px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    margin-top: 80px;
+    background-image: url('images/pizza.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 1px 2px white;
+    animation: slider 9s infinite linear;
+
+}
+
+@keyframes slider {
+    0% {
+        background-image: url('../images/burgur.jpg');
+    }
+
+    35% {
+        background-image: url('../images/coffee.png');
+    }
+
+    75% {
+        background-image: url('../images/fries');
+    }
+
+    100%{
+        background-image: url('../images/pizza.jpg');
+    }
+}
+
+header .bt {
+    position: relative;
+    left: 20%;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    font-family: 'lato' sans-serif;
+    font-size: 1.9rem;
+    background-color: mintcream;
+    border: blue solid 2px;
+    border-radius: 15px;
+}
+
+button:hover {
+    width: 125px;
+    background-color: black;
+   
+}
+button a:hover{
+    color:white;
+}
+
+
+/* about */
+.About {
+
+    margin-right: 20px;
+    height: auto;
+    justify-content: space-evenly;
+
+
+
+
+}
+
+.head {
+    width: auto;
+    font-family: 'lato' sans-serif;
+    font-size: 2.3rem;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.head h1 {
+    width: max-content;
+
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+    color: black
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #2a2727;
+    transform: scaleX(0);
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+
+}
+
+.About .about-body {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-image: url('/images/back.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+
+}
+
+.About .about-first,
+.about-second,
+.about-third {
+    background-color: white;
+    height: 500px;
+    width: 450px;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: larger;
+    border: darkgoldenrod;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25%;
+    margin-bottom: 2%;
+    text-align: center;
+    /* background-image: url('/images/back.jpg'); */
+    background-size: cover;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.About .about-first,
+.about-second,
+.about-third  {
+    font-family: 'lato' sans-serif;
+    opacity: 0.7;
+    font-size: x-large;
+}
+
+.about-first:hover,.about-second:hover,
+.about-third:hover {
+    opacity: 10;
+    transform: translateY(-15px);
+
+}
+
+.about-first-info {
+    height: 80%;
+    width: 50%px;
+    margin-top: 5%;
+
+    border-radius: 30%;
+
+}
+
+.about-first-info p {
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-decoration: solid;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.dish {
+
+    height: auto;
+    /* background-color: #dad2bc;
+    */
+}
+
+.recom-body {
+    height: auto;
+
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+    /* background-image: url('/images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.recom-body .recom-1 {
+    background-color: whitesmoke;
+    box-shadow: 1px 2px gray;
+    border: #70798c;
+    border: 1px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    height: 300px;
+    width: 250px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    margin-left: 1%;
+
+}
+
+.recom-1:hover {
+    transform: scale(1.1)
+}
+
+.recom-img {
+    /* margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 2%; */
+    width: 100%;
+    height: 80%;
+}
+
+.price {
+    margin-top: 5%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.recom-1 label {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: x-large;
+
+
+}
+
+.name label {
+    color: brown;
+    font-weight: bold;
+}
+
+
+
+
+
+/* contact us  */
+
+.contact-us {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+
+}
+
+.contact-form {
+    background-color: grey;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    margin-top: 2%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/* media queery */
+
+/* Add these media queries to your existing CSS */
+
+/* For screens smaller than 768px (typical tablet devices) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 3%;
+    }
+
+
+    header .navbar {
+        margin-left: 5%;
+        visibility: hidden;
+
+    }
+
+    header .navbar a {
+        padding: 3rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    header .bt {
+        left: 5%;
+    }
+
+    button {
+        width: 90px;
+        font-size: 1.4rem;
+    }
+
+    .slide {
+        height: 300px;
+    }
+
+    .About .about-first,
+    .About .about-second,
+    .About .about-third {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .About .about-first-info p {
+        font-size: 1.2rem;
+    }
+
+    .recom-body .recom-1 {
+        width: 45%;
+        height: 300px;
+        margin: 1%;
+    }
+
+    .recom-1 label {
+        font-size: 1rem;
+    }
+
+    .name label {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.2rem;
+    }
+}
+
+/* For screens smaller than 576px (typical mobile devices) */
+@media screen and (max-width: 576px) {
+    header .navbar {
+        margin-left: 0;
+    }
+
+    #icon {
+        visibility: visible;
+    }
+
+    header .navbar a {
+        padding: 2.5rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    header .bt {
+        left: 0;
+    }
+
+    button {
+        width: 80px;
+        font-size: 1.2rem;
+    }
+
+    .slide {
+        height: 200px;
+    }
+
+    .About .about-first,
+    .About .about-second,
+    .About .about-third {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .About .about-first-info p {
+        font-size: 1rem;
+    }
+
+    .recom-body .recom-1 {
+        width: 100%;
+        height: 250px;
+        margin: 5px 0;
+    }
+
+    .recom-1 label {
+        font-size: 1rem;
+    }
+
+    .name label {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* footer  */ 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Responsive styles */
+ @media only screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info,
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* my footer   */
+footer {
+    background-color: rgb(2, 2, 61);
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    
+   
+    display: flex;
+}
+.logo-footer
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.imp-links
+{
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 1px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+   
+}
+.imp-links a
+{
+    color:white;
+    font-size: larger;
+    text-decoration: none;
+}
+.imgicon {
+
+    color: #fff;
+    
+}
+.address
+{
+    /* background-color: aliceblue; */
+    color: #333;
+    margin-left:100px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color:white;
+}
+
+.contactusat
+{
+   
+    width: 500px;
+    height: max-content;
+   
+    
+}
+i{
+    color:white;
+    padding-left: 20px;
+    /* margin-left: 10px; */
+}
+i:hover
+{
+    color:cadetblue;
+}
+#gmap{
+    margin-left:50% ;
+}
+

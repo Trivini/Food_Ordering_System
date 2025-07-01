@@ -1,0 +1,94 @@
+
+        body {
+            font-family: 'Lobster', cursive;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #FF69B4;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        header:hover {
+            background: #FF1493;
+            background-color: black;
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 0.2em;
+        }
+
+        .item {
+            width: 30%;
+            margin: 0.5em;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            text-align: center;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .item:hover {
+            background: #FFDAB9;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .item h2 {
+            color: #FF69B4;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .item p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 0.5em;
+        }
+
+        .item span {
+            font-weight: bold;
+            color: #FF69B4;
+        }
+
+        /* Added CSS for expanding effect */
+        /* .expanded {
+            transform: scale(1.1);
+        } */
+
+        button
+        {
+            width: 157px;
+            height: 34px;
+            padding: initial;
+            background-color: #d0acac;
+            border-radius: inherit;
+            font-size: medium;
+            font-style: normal;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        button:hover
+        {
+            transform: scaleX(1.1);
+            
+        }

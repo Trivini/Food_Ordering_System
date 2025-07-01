@@ -1,0 +1,238 @@
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+body:hover {
+    background: #e0e0e0;
+}
+
+header {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 3em; /* Increased padding */
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+    transition: background 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header:hover {
+    background: #2980b9;
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3em; /* Increased padding */
+}
+
+.category {
+    width: 300px; /* Increased width */
+    height: 400px; /* Increased height */
+    border-radius: 25px; /* Increased border radius */
+    margin: 2em; /* Increased margin */
+    padding: 2em; /* Increased padding */
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    border: 2px solid #3498db;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex; /* Center text */
+    flex-direction: column;
+    align-items: center;
+}
+
+.category:hover {
+    transform: scale(1.15); /* Increased scale */
+    border: 2px solid #2980b9;
+    box-shadow: 0 28px 48px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+}
+
+.category h2 {
+    color: #2980b9;
+    font-size: 1.8em; /* Increased font size */
+    margin-bottom: 1.2em; /* Increased margin */
+    
+    transition: color 0.3s ease-in-out;
+    margin-top: 1.2em; /* Increased margin */
+}
+
+.category:hover h2 {
+    color: #1f618d;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px; /* Increased border radius */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em; /* Increased margin */
+    font-size: 1.2em; /* Increased font size */
+    color: #555;
+    border-bottom: 1px solid #3498db;
+    padding-bottom: 1.5em; /* Increased padding */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.item {
+    flex: 1;
+}
+
+.price {
+    color: #2980b9;
+    font-size: 1.5em; /* Increased font size */
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 
+.category:nth-child(1) {
+    background-image: url('breakfast_image.jpg');
+cursor: pointer;
+}
+
+.category:nth-child(2) {
+    background-image: url('parathas_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(3) {
+    background-image: url('hot_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(4) {
+    background-image: url('starters_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(5) {
+    background-image: url('maggi_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(6) {
+    background-image: url('sandwich_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(7) {
+    background-image: url('momos_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(8) {
+    background-image: url('pasta_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(9) {
+    background-image: url('burger_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(10) {
+    background-image: url('pizza_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(11) {
+    background-image: url('veg_rolls_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(12) {
+    background-image: url('non_veg_roll_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(13) {
+    background-image: url('bhurji_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(14) {
+    background-image: url('spice_up_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(15) {
+    background-image: url('bhurji_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(16) {
+    background-image: url('spice_up_bhurji_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(17) {
+    background-image: url('paneer_bhurji_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(18) {
+    background-image: url('cold_coffee_image.jpg');
+     cursor: pointer;
+}
+
+.category:nth-child(19) {
+    background-image: url('chocolate_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(20) {
+    background-image: url('milkshakes_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(21) {
+    background-image: url('choco_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(22) {
+    background-image: url('ice_cream_scoop_of_2_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(23) {
+    background-image: url('mastani_image.jpg');
+    cursor: pointer;
+}
+
+.category:nth-child(24) {
+    background-image: url('bubble_drinks_image.jpg');
+    cursor: pointer;
+}

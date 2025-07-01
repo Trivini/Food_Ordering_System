@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Crush</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="menu">
+    <div class="logo">
+      <img src="/images/logo1.jpg" />
+    </div>
+    <div class="menuitem">
+      <a href="admin.html"  target="_parent">DashBoard</a>
+      <a href="admin.html"  target="_parent">Orders</a>
+      <a id="bill" href="admin.html"  target="_parent">Bills</a>
+      <a href="admin.html"  target="_parent">Products</a>
+      <a href="#" target="_parent">Feedbacks</a>
+      <a href="#" target="_parent"></a>
+    </div>
+  </div>
+
+
+  <div class="product">
+    <div class="product_menu">
+        <button class="menu_button" onclick="add_products()">Add Products</button>
+        <button class="menu_button">Delete Products</button>
+        <button class="menu_button">Check Products</button>
+        <button class="menu_button">Update Products</button>
+    </div>
+
+
+    <div id="add_prod">
+      <form class="add_prod">
+        <input type="text"   name="pro_id" placeholder="Enter Product ID"/>
+        <input type="text" name="pro_name" placeholder="Enter Product Name"/>
+        <input type="text" name="pro_catr" placeholder="Enter Product Category"/>
+        <input type="text" name="pro_price" placeholder="Enter Product Price"/>
+        <input type="number" placeholder="Enter product Quanity"/>
+        <button class="add_pro_btn" type="submit">Add Product</button>
+        <button class="add_pro_btn">Clear</button>
+      </form>
+    </div>  
+    
+  </div>
+
+
+
+<script src="../javascript/products.js"></script>
+
+ </body>
+</html>

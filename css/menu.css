@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Open+Sans&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+.container
+{
+    display: flex;
+    background-color: aqua;
+    width: auto;
+    height: 1000px;
+    margin-top: 123px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card
+{
+    background-color: black;
+    width: 296px;
+    height: 323px;
+    border-radius: 50px;
+    margin-left: 30px;
+
+}
+.image
+{
+
+}

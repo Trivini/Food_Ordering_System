@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card - Cafe Crush</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"> -->
+    <link rel="stylesheet" href="breakfast.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Menu Card - Cafe Crush</h1>
+    </header>
+
+    <section>
+        <div class="item" onclick="expandItem(this)">
+            <img src="4samosa.jpg" alt="Samosa Image">
+            <h2>Samosa</h2>
+            <p>Price: <span>₹15</span></p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="item" onclick="expandItem(this)">
+            <img src="pohe.jpg" alt="Pohe Image">
+            <h2>Pohe</h2>
+            <p>Price: <span>₹10</span></p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="item" onclick="expandItem(this)">
+            <img src="misalpav.jpg" alt="Misal Pav Image">
+            <h2>Misal Pav</h2>
+            <p>Price: <span>₹30</span></p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="item" onclick="expandItem(this)">
+            <img src="pavbhaji.jpg" alt="Pav Bhaji Image">
+            <h2>Pav Bhaji</h2>
+            <p>Price: <span>₹40</span></p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="item" onclick="expandItem(this)">
+            <img src="puribhaji.jpg" alt="Puri Bhaji Image">
+            <h2>Puri Bhaji</h2>
+            <p>Price: <span>₹50</span></p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="item" onclick="expandItem(this)">
+            <img src="cholebhature.jpg" alt="Chole Bhature Image">
+            <h2>Chole Bhature</h2>
+            <p>Price: <span>₹60</span></p>
+            <button>Add To Cart</button>
+        </div>
+    </section>
+
+    <script>
+        function expandItem(item) {
+            item.classList.toggle('expanded');
+        }
+    </script>
+
+</body>
+
+</html>
